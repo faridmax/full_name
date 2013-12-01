@@ -1,4 +1,4 @@
-require 'full_name'
+require 'spec_helper.rb'
 
 describe FullName do
   it 'should fail' do

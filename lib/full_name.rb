@@ -1,6 +1,6 @@
 class FullName
   def self.hi
-    puts 'Hello World'
+    puts 'Hello World'  
   end
 end
 
