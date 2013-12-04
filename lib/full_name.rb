@@ -2,16 +2,20 @@ module FullName
   LOCALES = [:en, :fr]
 
   def full_name locale = :en
-    return full_name(:en) unless LOCALES.include? locale
+    return full_name unless LOCALES.include? locale
 
     unless first_name.nil? or first_name.empty?
       unless last_name.nil? or last_name.empty?
         build_with_both locale     
       else
-        build_with_firstname locale     
+        build_with_firstname      
       end
     else
-      build_with_lastname locale     
+      unless last_name.nil? or last_name.empty?
+        build_with_lastname locale       
+      else
+        ''     
+      end        
     end
   end
 
@@ -25,8 +29,8 @@ module FullName
       end
     end
     
-    def build_with_firstname locale
-      full_name = first_name.capitalize
+    def build_with_firstname 
+      first_name.capitalize
     end
 
     def build_with_lastname locale

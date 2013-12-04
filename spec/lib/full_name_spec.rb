@@ -11,6 +11,7 @@ describe FullName do
    ['', 'Gantaume', :en, 'Gantaume'],
    ['', 'gantaume', :en, 'Gantaume'],
    [nil, 'Gantaume', :en, 'Gantaume'],
+   [nil, nil, :en, ''],
 
    ['', 'gantaume', :fr, 'GANTAUME'],
    ['Benoit', 'Gantaume', :fr, 'GANTAUME, Benoit'],
