@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'full_name'
-  s.version     = '1.0.0'
+  s.version     = '1.0.1'
   s.date        = '2013-12-01'
   s.summary     = "Adds full_name method for classes that provide a first_name and a last_name!"
   s.description = "Adds full_name method for classes that provide a first_name and a last_name!"
