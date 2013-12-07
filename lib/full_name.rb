@@ -5,14 +5,14 @@ module FullName
   def full_name(locale = :en)
     return full_name unless LOCALES.include? locale
 
-    if first_name.nil? && first_name.empty?
-      if last_name.nil? && last_name.empty?
+    if first_name.nil? || first_name.empty?
+      if last_name.nil? || last_name.empty?
         ''
       else
         build_with_lastname locale
       end
     else
-      if last_name.nil? && last_name.empty?
+      if last_name.nil? || last_name.empty?
         build_with_firstname
       else
         build_with_both locale
